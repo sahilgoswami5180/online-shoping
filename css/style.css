@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'jost';
+    src: url('../fonts/Jost-Regular.ttf');
+}
+
+
+* {
+    font-family: 'jost';
+    text-decoration: none !important;
+    scroll-behavior: smooth;
+}
+
+.c-btn {
+    margin-top: 10px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    float: right;
+}
+
+.c-btn:focus {
+    background: black !important;
+    color: white !important;
+}
+
+input, textarea, select, textarea {
+    border: 0px !important;
+    border-bottom: 1px solid gray !important;
+    border-radius: 0px !important;
+}
+
+/* navbar */
+.navbar-bg {
+    background-color: rgb(white 80%);
+    backdrop-filter: blur(20px) !important;
+}
+
+.nav-logo {
+    width: 87px !important;
+}
+
+.c-menu-mobile {
+    background-color: transparent !important;
+    color: black !important;
+    border: none !important;
+}
+
+.c-nav-link {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.c-nav-link::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #2bd576;
+    transform: scale(0);
+    transition: all 0.5s ease;
+    transform-origin: left;
+}
+
+.c-nav-link:hover::after, .c-nav-link {
+    transform: scale(1);
+}
+
+
+/* c img- slider */
+.c-img-slider {
+    width: 100%;
+    height: 400px !important;
+}
+
+.c-img-slider img {
+    width: 100% !important;
+    height: 100%;
+}
+
+/* trending products section */
+.center-text h2 {
+    color: #111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.center-text span {
+    color: #ee1c47;
+}
+
+.c-col-trending {
+    height: 370px;
+    margin-top: 10px !important;
+}
+
+.c-col-trending img {
+    height: 80%;
+    transition: all 0.5s ease;
+    width: 100%;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+
+}
+
+.c-col-trending img:hover {
+    transform: scale(0.9);
+}
+
+.price {
+    height: 20%;
+}
+
+.p-price{
+    font-size: 25px;
+    color: red;
+    font-weight: 900;
+}
+
+.price h4 {
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.price p {
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* check list */
+.c-check-col {
+    height: 300px;
+}
+
+.c-check-col img {
+    height: 100%;
+}
+
+/* client-c */
+.client-c {
+    padding: 15px;
+}
+
+.client-bg {
+    background: #FAE8C4;
+}
+
+.client-c img {
+    width: 110px !important;
+    height: auto !important;
+}
+
+.client-c p {
+    font-size: 16px;
+    margin-top: 7px;
+    text-transform: capitalize;
+}
+
+.client-c h5 {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+
+
+/* news start */
+.c-news-col {
+    height: 390px;
+}
+
+.c-news-col img {
+    width: 100%;
+    height: 70%;
+    border-radius: 15px !important;
+}
+
+.c-news-col .date {
+    opacity: 0.6;
+    font-size: 15px;
+}
+
+.c-news-col .text {
+    font-size: 13px;
+}
+
+.c-news-col button {
+    border: 0;
+    font-size: 13px;
+    float: right;
+    color: red !important;
+    text-decoration: #151515;
+    text-transform: capitalize;
+    background: transparent !important;
+}
+
+
+/* about us review */
+.c-about-col {
+    height: 350px;
+}
+
+.c-about-col img {
+    height: 100%;
+}
+
+.c-about-col h1 {
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.c-about-col h6 {
+    opacity: 0.7;
+    margin-bottom: 20px;
+    color: gray !important;
+    font-size: 15px !important;
+}
+
+
+
+.client-c .c-footer-icons .icons-social{
+    width: 24px !important; 
+}
+
+
+
+
+
+.size-btn:focus{
+    background-color: blue !important;
+    color: white;
+}
+
+
+
+
+/*** Contact ***/
+@media (min-width: 992px) {
+    .container.contact-page {
+        max-width: 100% !important;
+    }
+
+    .contact-page .contact-form {
+        padding-left: calc(((100% - 960px) / 2) + .75rem);
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact-page .contact-form {
+        padding-left: calc(((100% - 1140px) / 2) + .75rem);
+    }
+}
+
+@media (min-width: 1400px) {
+    .contact-page .contact-form {
+        padding-left: calc(((100% - 1320px) / 2) + .75rem);
+    }
+}
+
+
+
+
+/* responcive */
+@media (max-width: 575.98px) {
+
+    .offcanvas.showing, .offcanvas.show:not(.hiding) {
+        width: 83%;
+    }
+
+    .nav-logo {
+        width: 63px !important;
+    }
+
+    .c-check-col {
+        height: 177px;
+    }
+
+    .c-img-slider {
+        width: 100%;
+        height: 100px !important;
+    }
+
+    .c-about-col {
+        height: 200px;
+        margin-top: 10px !important;
+    }
+
+    .c-about-col h6 {
+        font-size: 11px;
+        font-size: 30px;
+    }
+
+    .c-about-col img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .center-text h2 {
+        font-size: 22px;
+    }
+
+    .c-col-trending {
+        height: 325px;
+        margin-top: 10px !important;
+    }
+
+    .c-col-trending img {
+        height: 70%;
+    }
+
+    .price h4, .price p {
+        font-size: 10px;
+    }
+
+    .c-banner-card {
+        height: 60px !important;
+    }
+
+
+    .client-c img {
+        width: 80px !important;
+    }
+
+    .client-c p {
+        font-size: 10px;
+    }
+
+    .c-about-col h6 {
+        font-size: 11px !important;
+    }
+
+    @media (max-width: 767.98px) {
+        .c-img-slider {
+            width: 100%;
+        }
+    }
+}
